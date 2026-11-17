@@ -25,7 +25,11 @@ Then: set `APP_NAME` in `appkit/config.py`, rename the `appkit` package if you l
 | `appkit/backup.py` | one SQLite online backup per day, keeps 14 |
 | `appkit/ai.py`, `usage.py` | `ai.ask(prompt, system, purpose)` with prompt caching; every call logged with an estimated cost (Settings page) |
 | `appkit/debounce.py` | act only after N minutes without edits (persisted) |
-| `pages/` | Home, Data (dialog + chart example), Settings, Docs |
+| `pages/` | Cockpit (tile row + animated chart demo), Home, Data (dialog + chart example), Settings, Docs |
+
+## Animations
+- Tiles: ring fill, count-up numbers, sparkline draw, dot pop (automatic in `ui.ring_card / metric_card / sparkline / dots`).
+- Charts: wrap a figure in `st.container(key="anim_<name>")` and bars rise, annotations fade in, then lines are revealed (CSS at the end of `assets/style.css`; first 60 bars are staggered). See `pages/0_Cockpit.py`.
 
 ## Lessons baked in (from the original app)
 - Streamlit dialogs are fragments: `st.rerun()` inside a dialog closes it; AppTest cannot drive them (use Playwright).

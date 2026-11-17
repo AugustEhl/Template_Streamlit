@@ -8,7 +8,8 @@ from appkit.config import APP_NAME
 st.set_page_config(page_title=APP_NAME, page_icon="📊", layout="wide")
 
 pages = [
-    st.Page("pages/1_Home.py", title="Home", icon=":material/home:", url_path="home", default=True),
+    st.Page("pages/0_Cockpit.py", title="Cockpit", icon=":material/dashboard:", url_path="cockpit", default=True),
+    st.Page("pages/1_Home.py", title="Home", icon=":material/home:", url_path="home"),
     st.Page("pages/2_Data.py", title="Data", icon=":material/table_chart:", url_path="data"),
     st.Page("pages/3_Settings.py", title="Settings", icon=":material/settings:", url_path="settings"),
     st.Page("pages/4_Docs.py", title="Docs", icon=":material/menu_book:", url_path="docs"),
