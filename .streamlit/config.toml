@@ -1,0 +1,20 @@
+# Clean-tech light theme: soft sage canvas, white cards, the club document's greens as accents
+[theme]
+base = "light"
+primaryColor = "#4f6228"
+backgroundColor = "#f2f5ec"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#1c2a10"
+linkColor = "#4f6228"
+borderColor = "#dfe7cf"
+font = "sans-serif"
+
+[theme.sidebar]
+backgroundColor = "#e9efdb"
+secondaryBackgroundColor = "#ffffff"
+
+[client]
+toolbarMode = "minimal"      # hides the Deploy button and the three-dots menu
+
+[server]
+runOnSave = true
